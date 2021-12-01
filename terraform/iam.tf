@@ -4,6 +4,7 @@ resource "aws_iam_openid_connect_provider" "github" {
 
   client_id_list = [
     "sigstore",
+    "sts.amazonaws.com",
   ]
 
   # ref: https://github.com/aws-actions/configure-aws-credentials/tree/v1.6.0#sample-iam-role-cloudformation-template
