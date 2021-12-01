@@ -6,6 +6,7 @@ resource "aws_iam_openid_connect_provider" "github" {
     "sigstore",
   ]
 
+  # ref: https://github.com/aws-actions/configure-aws-credentials/tree/v1.6.0#sample-iam-role-cloudformation-template
   thumbprint_list = [
     "a031c46782e6e6c662c2c87c76da9aa62ccabd8e",
   ]
